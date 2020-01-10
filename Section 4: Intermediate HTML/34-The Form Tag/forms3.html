@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms Example 3</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+    
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <button>Submit</button>
+    
+    <p>The above code was taken from our last example. Individually, the elements
+        of a form can be created. However, unless they are incased in a form tag, they
+        won't be able to do anything with the data that is submitted. Note that when the
+        code above is filled out and Submit is clicked, nothing happens. When this is done
+        to the code below, you can see the page is refreshed. This is because the code below
+        is encased in the form tag 
+    </p>
+    
+    <form>    
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <button>Submit</button>
+    </form>
+    
+    <p>The only thing the second form does is refresh the page. Remember, we have two items
+        that need to be specified for a form to work: The action and the method. The action is 
+        where the form data is sent to and the method is a get/post. By default, if no action is 
+        specified, it will be sent to its own location. If a method isn't specified, it will use 
+        get to pull the data. Hence why the page refreshes. It first sends the data to the same location.
+        This HTML page has nothing to store that data, so nothing happens. Then a get is called that pulls the 
+        page again, causing a refresh.
+    </p>
+
+    <p>The code below is the same. However, an action and method are called. In the below example,
+        the action is set to wikipedia.com while the method is set to get. This will cause Wikipedia to 
+        load when the user data is submitted. 
+    </p>
+    
+    <form>    
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
