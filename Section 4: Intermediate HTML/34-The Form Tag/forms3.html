@@ -42,9 +42,21 @@
         load when the user data is submitted. 
     </p>
     
-    <form>    
+    <form action="https://wikipedia.org" method="GET">    
         <input type="text" placeholder="username">
         <input type="password" placeholder="password">
+        <button>Submit</button>
+    </form>
+
+    <p>In the code below, we've added a name attribute followed by a string value as to what
+        we want to name our inputs. When you fill out the fourm below and hit enter, you can check
+        the URL at the end and notice it has tacked on your entered data. This is known as a query string.
+        This is structured with a "?", followed by key value pairs with the data seperated by the "&" character.
+    </p>
+    
+    <form>    
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="password" placeholder="password">
         <button>Submit</button>
     </form>
 
