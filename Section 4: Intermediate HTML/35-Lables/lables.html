@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lables Document</title>
+    <title>Labels Document</title>
 </head>
 <body>
 
-    <h1>Lables in Fourms</h1>
+    <h1>Labels in Forms</h1>
 
-    <p>Lables allow us to add captions to our fields in our fourms. Not only does
-        this inform the regular user as to what each fourm field is requesting, this
-        is also very important for visually impared usres. Assistance software looks
-        for these lables when reading back to the user.
+    <p>Labels allow us to add captions to our fields in our forms. Not only does
+        this inform the regular user as to what each form field is requesting, this
+        is also very important for visually impaired users. Assistance software looks
+        for these labels when reading back to the user.
     </p>
 
-    <p>Below we see the same fourm we have been making. We have added label tags in order to
-        add those captions to our fourm. All imputs are placed within the label tag in order to
+    <p>Below we see the same form we have been making. We have added label tags in order to
+        add those captions to our form. All inputs are placed within the label tag in order to
         add the caption. See the source page for the code example.
     </p>
 
@@ -35,6 +35,21 @@
 
         <input type="submit">
         
+    </form>
+
+    <p>Another method of using labels is to use a "for" attribute that corresponds to an "id"
+        attribute used in the input tag. This means that our input tags no longer need to be contained
+        within our input tags. View the source page to see the difference. However, the below
+        form is the same as the one above. 
+    </p>
+
+    <form action="https://wikipedia.com">
+        
+        <label for="username">Username:</label>
+        <input id="username" type="text" placeholder="username">
+        
+        <label for="password">Password:</label>
+        <input id="password" type="text" placeholder="password">
     </form>
     
 </body>
