@@ -8,19 +8,40 @@
 </head>
 <body>
 
+    <p>By adding the "required attribute" attribute, we can force an input to be completed before
+        the user data can be submitted. See the source page for the example.
+    </p>
+
     <form action="https://wikipedia.com">
 
-        <p>By adding the "required attribute"</p>
         
         <label for="username">Username:</label>
         <input id="username" type="text" placeholder="username" required>
 
         <label for="password">Password:</label>
-        <input id="password" type="text" placeholder="password">
+        <input id="password" type="text" placeholder="password" required>
+        
+        <input type="submit">
+        
+    </form>
+    
+    <p>The below form is asking for an email instead of a username. By changing the type in the input to
+        email, we can see the requirements to pass have changed. Now our email field needs text in a vaild
+        email format in order to submit the data. See the source page for the example.
+    </p>
+
+    <form action="https://wikipedia.com">
+        
+        <label for="username">Username:</label>
+        <input id="username" type="email" placeholder="email" required>
+
+        <label for="password">Password:</label>
+        <input id="password" type="text" placeholder="password" required>
         
         <input type="submit">
         
     </form>
     
 </body>
+
 </html>

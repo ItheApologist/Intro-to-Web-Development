@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New User Input Types</title>
+</head>
+<body>
+
+    <h1>New User Input Types</h1>
+
+    <p>This example will cover three additional types of user inputs: radio buttons, select tags, textarea tags.</p>
+    
+    <p>
+        Below is an input type of "radio". Next to it is an input of type "checkbox" so you can 
+        view the difference. The major difference is that a radio tag cannot be turned off. As 
+        well, the radio button only allows for one choice at a time. In contrast, checkboxes allow the user to check 
+        off as many or little (including none) choices as they would like.
+    </p>
+
+    <input type="radio">
+    <input type="checkbox">
+
+    <p>
+        The below example contains a simpole questionair asking if you prefer cats or dogs. Obviously
+        any sane person would chose cats, but we won't get into that now. What's important is that we have
+        set up a radio button for each answer. Despite that, the user can select both making it all but useless
+        at the moment.
+    </p>
+    
+    <h3>Do you prefer cats or dogs?</h3>
+    
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input id="dogs" type="radio">
+
+        <label for="cats">Cats:</label>
+        <input id="cats" type="radio">
+
+        
+    </form>
+
+    <p>
+        To make the form below force only one possible selection, we use the name
+        attribute. By selecting a name and setting the same name for both input tags,
+        we force only one selection to be possilbe. Check the source page for the example.
+    </p>
+
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input name="petChoice" id="dogs" type="radio">
+
+        <label for="cats">Cats:</label>
+        <input name="petChoice" id="cats" type="radio">
+
+        
+    </form>
+    
+    <p>
+        In the form below, we have added a button at the end of the form with the 
+        buttom tag. Normally we create buttons with the input tag. However, when using a 
+        button tag at the end of a form, we cause that button to become the one to submit
+        the data. Now when you submit your choice below (Make sure it is Cats!), notice
+        that the URL adds the resulting name of the input followed by "=on". This is not
+        the result we want but test below just to see.
+    </p>
+    
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input name="petChoice" id="dogs" type="radio">
+
+        <label for="cats">Cats:</label>
+        <input name="petChoice" id="cats" type="radio">
+
+        <button>Go!</button>
+        
+    </form>
+
+    <p>
+        To add the correct data to be sent, we need to add a value attribute to the tags.
+        Now notice that the form below submits the data value of the same name as the choice
+        chosen below! See the source page for the example.
+    </p>
+    
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input name="petChoice" id="dogs" type="radio" value="Dogs">
+
+        <label for="cats">Cats:</label>
+        <input name="petChoice" id="cats" type="radio" value="Cats">
+
+        <button>Go!</button>
+        
+    </form>
+
+    <p>
+        The next item we are going to explore is the select tag. You can see below the 
+        tag in action. We don't have any user data in yet, so when clicked, nothing happens. 
+    </p>
+
+    <select>
+       
+    </select>
+    
+    <p>
+        To add in selections, you need to specify items with the "option" tag. 
+        Between the tag you put the name of the content you wish to add. Below we
+        have a simple question with three options to select. Notice that when we hit 
+        the go button, we don't get anything in the HTML.
+    </p>
+    
+    <h3>What is your favorite color?</h3>
+
+    <form>
+    
+        <select>
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Blue</option>
+        </select>
+        
+        <button>Go!</button>
+        
+    </form>
+
+    <p>
+        To send the data, we need to add a name to the select tag. Below we've added the name
+        color, which will populate the HTML with color=CHOICE. See the source page for example.
+    </p>
+
+    <h3>What is your favorite color?</h3>
+    
+    <form>
+    
+        <select name="Color">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Blue</option>
+        </select>
+        
+        <button>Go!</button>
+
+    </form>
+
+    <p>
+        Sometimes we want different data from inputs when being submitted. Below we have a question
+        about a user's mood. Notice the data that is submitted with the input. Not very useful.
+    </p>
+    
+    <h3>What is your mood?</h3>
+    
+    <form>
+    
+        <select name="Mood">
+            <option>:)</option>
+            <option>:|</option>
+            <option>:(</option>
+        </select>
+        
+        <button>Go!</button>
+
+    </form>
+
+    <p>To change the data being sent, we will add the value tag. In the example below, instead of the
+        raw data from the emoticons being sent, we will send the verbal words assicated with them: happy, neutral, and sad.
+        See the source page for the code example. 
+    </p>
+    
+    <h3>What is your mood?</h3>
+    
+    <form>
+    
+        <select name="Mood">
+            <option value="happy">:)</option>
+            <option value="neutral">:|</option>
+            <option value="sad">:(</option>
+        </select>
+        
+        <button>Go!</button>
+
+    </form>
+
+    <p>
+        When we need to create a text input box large enough for big sums of data, we 
+        use the "textarea" tag. See the example below.
+    </p>
+    
+    <textarea></textarea>
+
+    <p>
+        This own it's own isn't useful. However, with the rows and cols attributes, we
+        can set numarical values that define the size of our textarea. The example below
+        has a rows value of 10 and cols value of 50. Notice that we have a much larger text box for
+        use. Remember to set a name for your textarea so that the data is sent properly.
+    </p>
+
+    <form>
+        
+        <textarea name="paragraph" rows="10" cols="50"></textarea>
+        <button>Go!</button>
+        
+    </form>
+
+</body>
+</html>
