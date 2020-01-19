@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Style Sheet HTML</title>
+
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+
+    <style type="text/css">
+
+        /* Below is the general syntax for CSS */
+
+        /* selector {
+            property: value;
+        } */
+
+        h1 {
+            color: purple;
+        }
+
+        li {
+            color: orange;
+        }
+    
+    </style>
+    
+</head>
+<body>
+
+    <h1>About Me</h1>
+
+    <p>Below is our HTML structure we are going to style.</p>
+
+    <h4>My Hobbies:</h4>
+
+    <ul>
+        <li>Playing Guitar</li>
+        <li>Cooking</li>
+        <li>Origami</li>
+    </ul>
+    
+    <p>There are two ways to create style in HTML. The first one, Inline, is not the way to go.
+        This was the old method used to style HTML before CSS came about. Below we have our code
+        styled via Inline. Check the source page for the code example.
+    </p>
+    
+    <h1>About Me</h1>
+
+    <p>Below is our HTML structure we are going to style.</p>
+
+    <h4>My Hobbies:</h4>
+
+    <ul>
+        <li style="color: purple">Playing Guitar</li>
+        <li style="color: purple">Cooking</li>
+        <li style="color: purple">Origami</li>
+    </ul>
+
+    <p>One issue with the above example is that you have to place the styling for each tag, making work
+        cumbersome. The other issue with this is that all the code, both the HTML structure and the styling, 
+        will be contained within the same file. This again makes work cumbersome opposed to using two files to separate
+        both structure and styling. 
+    </p>
+
+    <p>The second method of styling is to use style tags. You will notice on our page that both h1 headers are purple.
+        However, if you look at the code, you won't see any styling in the h1 tags. That's because we used the Style Tag method
+        to create the styling. To do this, we insert the style tag into the HTML header. We call the type as text/css, then write the
+        CSS syntax to call all h1 headers to be purple. Check the source page for the example. I've also put in an li styling
+        using this method resulting in all unstyled li tags (meaning they don't have any specified styling in them) to turn orange.
+    </p>
+
+    <p>One thing we have been doing wrong thus far has been to write our CSS in the same file as our HTML. By doing so, 
+        we are not following the methodology of keeping our structure and styling separate. To resolve this, we can use a link tag
+        in the HTML header that references our local HTML file. 
+    </p>
+    
+    <h2>EXAMPLE</h2>
+
+    <p>You might have noticed that our paragraphs have all been blue! Also, our h2 tag above is green. This was done doing the link
+        method. If you look at the source page, you can see in the header we have a link tag referencing our styleSheet.css page. You
+        can even click the link to view the CSS file.  
+    </p>
+    
+</body>
+</html>
