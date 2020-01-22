@@ -1,0 +1,53 @@
+/* NOTES ON CSS SELECTORS */
+
+/* The * selector selects all elements in an HTML docuemnt */
+/* and applies all stylings to them. */
+
+* {
+    border: 1px solid lightgray;
+}
+
+/* Decendent selectors allow you to select only elements within */
+/* a tag instead of all the elements in an HTML document. To write*/
+/* Simply type the tag name of the parent tag, followed by a space, then */
+/* the child tag(s). */
+
+li a {
+    color: red;
+}
+
+/* Adjecent selectors allow to you select tags that only exist in adjacent space */
+/* to other specified tags. You use the "+" tag. */
+
+h4 + ul {
+    border: 4px solid red;
+}
+
+/* The attribute selector allows you to pick a specific tag based off it's */
+/* attribute to make styling changes */
+
+a[href="https://www.google.com"] {
+    background: blue;
+}
+
+/*  nth of type allows you the specified number of an attribute. */
+/* For example, select every 5th li tag to be styled as specified. */
+
+ul:nth-of-type(3) {
+    background: purple;
+}
+
+/* Keep in mind that these rules repeat for every nth of an item within */
+/* a given group. If you notice in the HTML document, in list two, only the third */
+/* item is highlighted. The three test list items below are skipped because */
+/* it is within it's own list group. */
+
+li:nth-of-type(3) {
+    background: green;
+}
+
+/* You can also specify even or odd which will select every other item in */
+
+li:nth-of-type(even) {
+    background: silver;
+}
