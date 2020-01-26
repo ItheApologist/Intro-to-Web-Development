@@ -1,0 +1,30 @@
+p {
+    border: 2px solid blue;
+    width: 50%;
+
+    /* You can use percentages to define a value for selectors like width. If you */
+    /* adjust your page size, notice that it dynamicly adjust acording to the  */
+    /* availalbe space on the screen. */
+
+    padding: 10px;
+
+    /* Padding is the space between an element and it's border. Even if a visable border isn't */
+    /* defined, it exist. */
+
+    margin: 100px;
+
+    /* Margin is the space on the outside of the border that exist between new HTML */
+    /* elements. */
+
+    /* When inspecting HTML elements, you will notice three colors when inspecing specific */
+    /* elements. Blue is the content, green is any padding, and orange is the margin space. */
+
+    /* Just like with border, you can use the selector "border" and fill it out to add values to */
+    /* all four sides. The first value is top, then right, then bottom, then left. It would look  */
+    /* like so: */
+    /* margin: 20px, 40px, 80px, 100px; */
+
+    /* You can use 0 to add 0px (You only can abstain the px with 0) and auto to auto */
+    /* fill the value. You can also skip specifying all four values by only putting two. */
+    /* The first value becomes top and bottom, the second value becomes right and left. */
+}
