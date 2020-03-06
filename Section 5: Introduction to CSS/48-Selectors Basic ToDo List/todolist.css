@@ -1,0 +1,16 @@
+body {
+    background-color: Orange;
+}
+
+li {
+    border: solid 2px red;
+}
+
+#Special {
+    background-color: yellow;
+}
+
+.Special2 {
+    background-color: green;
+    text-decoration: line-through;
+}

@@ -1,0 +1,54 @@
+body {
+    font-size: 10px;
+}
+
+p {
+    font-family: Arial;
+}
+
+h1 {
+    font-family: Georgia;
+}
+
+
+p {
+    font-size: 2.0em;
+}
+
+h1 {
+    font-size: 5.0em;
+}
+
+span {
+    font-size: 2.0em;
+}
+
+/* The weight of a font refers to how bold or lightweight text is or how thick or */
+/* thin the lines are. You can use named values like bold to make text bold or normal to*/
+/* make it normal. As well, some fonts let you choose a value betwen 100 - 800 to increment */
+/* the font boldness.  */
+
+p {
+    font-weight: bold;
+}
+
+/* line-hight allows you to change the spacing between lines of text in a given HTML element. */
+/* This is similar to how you would space lines in a Word document from 1.5 or double. */
+/* You use a numerical value to multiple the line spacing of a given font. */
+
+p {
+    line-height: 2;
+}
+
+/* text-allign is used to allign your text. You can use it to center your text or other */
+/* such allignments.  */
+
+h1 {
+    text-align: center;
+}
+
+/* text-decoration allows you too add things like underlines and such. */
+
+p {
+    text-decoration: underline;
+}

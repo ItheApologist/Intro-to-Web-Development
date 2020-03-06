@@ -1,0 +1,30 @@
+body {
+    font-size: 10px;
+}
+
+p {
+    font-family: Arial;
+}
+
+h1 {
+    font-family: Georgia;
+}
+
+/* The em value is a dynamic value that changes accoding to the values set to relative */
+/* items. In our example, we set our body to 10px. We made our h1 5 times larger and our */
+/* our paragraph twice as lage. We used span to specify some text within our paragraph */
+/* which is also twice as large. Because em takes into account nesting, we don't need */
+/* to specify that span is nested in the paragrah. This means the span is twice as large */
+/* as the paragrah value, meaning four times as large as the body value. */
+
+p {
+    font-size: 2.0em;
+}
+
+h1 {
+    font-size: 5.0em;
+}
+
+span {
+    font-size: 2.0em;
+}
