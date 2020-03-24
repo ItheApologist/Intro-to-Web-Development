@@ -14,7 +14,7 @@
 
     <div class="container">
         <h1 class="text-center display-4">Navs and Flexbox</h1>
-        <ul class="nav">
+        <ul class="nav border border-primary justify-content-between">
             <li class="nav-item">
               <a class="nav-link active" href="#">Active</a>
             </li>
@@ -28,6 +28,13 @@
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
+
+          <nav class="nav flex-column flex-sm-row justify-content-center align-items-center">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </nav>
     </div>
     
 </body>
