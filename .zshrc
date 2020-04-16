@@ -1,11 +1,8 @@
-# Disables directory permissions check before oh-my-zsh is loaded.
-ZSH_DISABLE_COMPFIX="true"
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/thennessy/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,13 +100,15 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -a'
 alias lll='clear && pwd && ls'
 alias cl='clear'
-alias new='echo "What is your new directory name?" && read new && mkdir $new && cd $new && cp /Users/thennessy/go/src/testRepo/GolangTraining/temp/main.go.tmp main.go && open main.go'
-alias newh='new && tmp'
-alias run='go run main.go'
 alias push='/usr/local/bin/push.sh'
-alias tmp='cp /Users/thennessy/go/src/testRepo/GolangWebdev/tpl.gohtml ./'
-alias runh='go run main.go > index.html && open index.html'
-alias abash='echo "What would you like to add to your bash profile?" && read new && echo $new >> /Users/thennessy/.bash_profile && source /Users/thennessy/.bash_profile'
-alias ubash='vim /Users/thennessy/.bash_profile && source /Users/thennessy/.bash_profile'
-alias cpboot='cp ~/code/Intro-to-Web-Development/bootstrap-4.1.3-dist/css/bootstrap.css ~/code/Intro-to-Web-Development/bootstrap-4.1.3-dist/js/bootstrap.js ~/code/Intro-to-Web-Development/bootstrap-4.1.3-dist/jquery/jquery-3.4.1.js ./'
+alias azsh='echo "What would you like to add to your zshell config?" && read new && echo $new >> /home/thennessy/.zshrc && source /home/thennessy/.zshrc'
+alias ezsh='vim /home/thennessy/.zshrc && source /home/thennessy/.zshrc'
+alias open='xdg-open'
+
+alias copen='google-chrome'
+alias update='apt-get update -y && apt-get upgrade -y'
+alias update='apt-get update -y && apt-get upgrade -y'
 alias newhtml='cp ~/Documents/Sample\ Code/* ./'
+export G0111MODULE=on
+export GOPATH=/home/thennessy/code/gocode
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
