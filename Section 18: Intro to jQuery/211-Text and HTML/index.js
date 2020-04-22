@@ -11,3 +11,7 @@ var returnLi = $("li").text();
 function changeLi(i) {
     $("li").text(i)
 }
+
+// Returns all HTML for the given element.
+
+returnHTML = $("ul").html();
