@@ -6,13 +6,17 @@ app.get("/", function(req, res) {
 });
 
 app.get("/speak/:animal", function(req, res) {
-    var animal = req.params.animal;
-    if (animal === "pig") {
-        res.send("The pig says \"Oink\"")
-    } else if (animal === "cow") {
-        res.send(`The cow says "Moo"`)
-    } else if (animal === "dog") {
-        res.send(`The dog says "Wolf Wolf!`)
+    var animal = req.params.animal.toLowerCase();
+    var sounds = {
+        pig: "Oink",
+        cow: "Moo!",
+        dog: "Woof Woof!",
+        cat: "I hate you human",
+        goldfish: ".....",
+    };
+    var sound = sounds[animal];
+    if (sound !== undefined) {
+        res.send(`The ${animal} says "${sound}"`)
     } else {
         res.send("Sorry, page not found...What are you doing with your life?")
     }
