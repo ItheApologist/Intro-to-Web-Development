@@ -1,0 +1,13 @@
+<h1>Results Page</h1>
+
+<% data["Search"].forEach((movie) => { %>
+    <li>
+        <%= movie["Title"] %> - <%= movie["Year"] %>
+    </li>
+<% }) %>
+
+<h2>Enter a new search below</h2>
+<form action="/results" method="GET">
+    <input type="text" placeholder="Search Term" name="search">
+    <input type="submit">
+</form>
