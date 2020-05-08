@@ -8,12 +8,12 @@ REST has seven total defined routes.
 
 ## Restful Routs
 
-| Name | Path | HTTP Verb | Purpose | 
-| --- | --- | --- | --- |
-| Index | /index | GET | Displays the page|
-| New | /index/new | GET | Shows a new forum for index|
-| Create | /index |-POST |-Creates new object for index and redirects (usually back to index)|
-| Show | /index/:id | GET | Shows info about a selected object on the index page|
-| Edit | /index/:id/edit | GET | Show the edit form for the selected object |
-| Update | /index/:id | PUT | Update the edited form object and redirects (usually back to index) |
-| Destroy | /index/:id | DELETE | Deletes the selected index object and redirects (usually back to index) | 
+| Name | Path | HTTP Verb | Purpose | Mongoose Method |
+| --- | --- | --- | --- | --- | 
+| Index | /index | GET | Displays the page| Index.find() |
+| New | /index/new | GET | Shows a new forum for index| N/A |
+| Create | /index |-POST |-Creates new object for index and redirects (usually back to index)| Index.create |
+| Show | /index/:id | GET | Shows info about a selected object on the index page | Index.findById() |
+| Edit | /index/:id/edit | GET | Show the edit form for the selected object | Index.findById() |
+| Update | /index/:id | PUT | Update the edited form object and redirects (usually back to index) | Index.findByAndUpdate() |
+| Destroy | /index/:id | DELETE | Deletes the selected index object and redirects (usually back to index) | Index.findByAndRemove() | 
