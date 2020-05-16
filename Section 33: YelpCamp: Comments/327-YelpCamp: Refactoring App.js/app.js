@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const Campground = require("./models/campground")
+const Campground = require("./models/campground");
 
 mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
 
@@ -40,7 +40,7 @@ app.post("/campgrounds", (req,res) => {
 });
 
 app.get("/campgrounds/new", (req,res) => {
-    res.render("new.ejs");
+    res.render("new");
 });
 
 // id signifies anything like /test or /help. Because /new is defined above, /new will always route before the code below.
